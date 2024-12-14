@@ -1,3 +1,21 @@
+{% extends 'shablon.html' %}
+
+{% block title %}
+Герои фильмов
+{% endblock %}
+
+{% block content %}
+    <div class="card" style="width: 18rem;">
+  <img src="{{ url_for('static', filename='still-life.jpg') }}" class="card-img-top" alt="...">
+  <div class="card-body">
+    <h5 class="card-title">Главный герой в Ципленке</h5>
+    <p class="card-text">Наш герой спасает ципленка, который превращается в черного лебедя, и в память о спасении уносит героя в Валинор</p>
+    <a href="#" class="btn btn-primary">{{link}}</a>
+  </div>
+</div>
+{% endblock %}
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -16,15 +34,7 @@
     </li>
 </ul>
 
-<div class="card" style="width: 18rem;">
-  <img src="{{ url_for('static', filename='still-life.jpg') }}" class="card-img-top" alt="...">
 
-  <div class="card-body">
-    <h5 class="card-title">Заголовок карточки</h5>
-    <p class="card-text">Небольшой пример текста, который должен основываться на названии карточки и составлять основную часть содержимого карты.</p>
-    <a href="#" class="btn btn-primary">{{link}}</a>
-  </div>
-</div>
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </body>
